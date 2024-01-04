@@ -1,0 +1,16 @@
+# global ignores:
+.vs
+build*/
+node_modules
+package-lock.json
+.cspellcache
+ .eslintcache
+
+# server ignores:
+server/Seed/Postman Backup
+
+# client ignores:
+client/.vite
+client/src/Urils/AgGridEnterprise/ag-grid-community.auto.esm.js
+client/src/Urils/AgGridEnterprise/ag-grid-enterprise.auto.esm.js
+client/src/Urils/AgGridEnterprise/licenseManager.js
