@@ -14,7 +14,7 @@ declare global {
   namespace NodeJS {
     interface ProcessEnv {
       NODE_ENV: 'development' | 'production';
-      PORT_DEV: number;
+      PORT: number;
       PORT_PROD: number;
       DATABASE: string;
       DATABASE_USERNAME: string;
@@ -25,17 +25,6 @@ declare global {
       JWT_SECRET: string;
       JWT_EXPIRES_IN: string;
       JWT_COOKIE_EXPIRES_IN: string;
-      // Send emails with Mailtrap in development environment
-      EMAIL_USERNAME: string;
-      EMAIL_PASSWORD: string;
-      EMAIL_HOST: string;
-      EMAIL_PORT: number;
-      // Send emails with Sendgrid in production environment
-      EMAIL_FROM: string;
-      SENDINBLUE_USERNAME: string;
-      SENDINBLUE_SMTP_KEY: string;
-      SENDINBLUE_HOST: string;
-      SENDINBLUE_PORT: number;
     }
   }
 }

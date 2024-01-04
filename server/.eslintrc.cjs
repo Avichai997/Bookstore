@@ -23,6 +23,7 @@ module.exports = {
   ignorePatterns: ['build', '.eslintrc.cjs', 'Seed/Postman Backup'],
   plugins: ['@typescript-eslint', 'promise', 'import', 'prettier'],
   rules: {
+    '@typescript-eslint/triple-slash-reference': 'off',
     'prefer-destructuring': 'off',
     'consistent-return': 'off',
     'no-plusplus': 'off',

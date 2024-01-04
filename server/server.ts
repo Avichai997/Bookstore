@@ -2,8 +2,8 @@
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import app from '@/app';
-
-// catch errors in program
+import { NODE_ENV, PORT, DATABASE, HOST } from '@Utils/environment';
+// Catch uncaughtException errors in server.
 process.on('uncaughtException', (err) => {
   console.log('UNCAUGHT EXCEPTION! 💥 Shutting down...');
   console.log(err.name, err.message);
@@ -12,43 +12,16 @@ process.on('uncaughtException', (err) => {
 
 dotenv.config();
 
-const {
-  NODE_ENV,
-  PORT_DEV,
-  PORT_PROD,
-  DATABASE,
-  DATABASE_USERNAME,
-  DATABASE_PASSWORD,
-  DATABASE_NAME,
-  HOST,
-} = process.env;
-
-if (
-  !NODE_ENV ||
-  !PORT_DEV ||
-  !PORT_PROD ||
-  !DATABASE ||
-  !DATABASE_USERNAME ||
-  !DATABASE_PASSWORD ||
-  !DATABASE_NAME ||
-  !HOST
-)
-  process.exit(1);
-
-const DB_CONNECTION_STRING = DATABASE.replace('<DB_USERNAME>', DATABASE_USERNAME)
-  .replace('<DB_PASSWORD>', DATABASE_PASSWORD)
-  .replace('<DB_NAME>', DATABASE_NAME);
+if (!NODE_ENV || !PORT || !DATABASE || !HOST) process.exit(1);
 
 // don't allow mongoose save fields that don't exist in model's schema
-mongoose.set('strictQuery', true).connect(DB_CONNECTION_STRING);
+mongoose.set('strictQuery', true).connect(DATABASE);
 mongoose.connection.on('connected', () => {
   console.log('DB connection successful!', '\x1b[0m');
 });
 
-const port = NODE_ENV === 'development' ? PORT_DEV : PORT_PROD;
-
-const server = app.listen(port, () => {
-  console.log('\x1b[32m', `App running on ${HOST}:${port}...`);
+const server = app.listen(PORT, () => {
+  console.log('\x1b[32m', `App running on ${HOST}:${PORT}...`);
   console.log(`NODE_ENV: ${NODE_ENV}`);
 });
 

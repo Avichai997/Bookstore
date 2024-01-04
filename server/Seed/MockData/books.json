@@ -1,0 +1,272 @@
+[
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "description": "The magical journey of a young wizard, Harry Potter.",
+    "id": 1,
+    "author": "J.K. Rowling",
+    "publicationDate": "1997-06-26",
+    "genre": "Fantasy",
+    "price": 19.99
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "description": "A classic novel exploring racial injustice in the American South.",
+    "id": 2,
+    "author": "Harper Lee",
+    "publicationDate": "1960-07-11",
+    "genre": "Drama",
+    "price": 14.99
+  },
+  {
+    "title": "1984",
+    "description": "A dystopian novel depicting a totalitarian regime.",
+    "id": 3,
+    "author": "George Orwell",
+    "publicationDate": "1949-06-08",
+    "genre": "Science Fiction",
+    "price": 12.99
+  },
+  {
+    "title": "The Great Gatsby",
+    "description": "A portrayal of the Roaring Twenties in America.",
+    "id": 4,
+    "author": "F. Scott Fitzgerald",
+    "publicationDate": "1925-04-10",
+    "genre": "Romance",
+    "price": 16.99
+  },
+  {
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "description": "An intergalactic adventure filled with humor and absurdity.",
+    "id": 5,
+    "author": "Douglas Adams",
+    "publicationDate": "1979-10-12",
+    "genre": "Satire",
+    "price": 18.99
+  },
+  {
+    "title": "The Da Vinci Code",
+    "description": "A thriller involving symbology and ancient mysteries.",
+    "id": 6,
+    "author": "Dan Brown",
+    "publicationDate": "2003-03-18",
+    "genre": "Mystery",
+    "price": 21.99
+  },
+  {
+    "title": "The Shining",
+    "description": "A horror novel set in a haunted hotel.",
+    "id": 7,
+    "author": "Stephen King",
+    "publicationDate": "1977-01-28",
+    "genre": "Horror",
+    "price": 24.99
+  },
+  {
+    "title": "Pride and Prejudice",
+    "description": "A classic novel exploring themes of love and social class.",
+    "id": 8,
+    "author": "Jane Austen",
+    "publicationDate": "1813-01-28",
+    "genre": "Romance",
+    "price": 15.99
+  },
+  {
+    "title": "The Hunger Games",
+    "description": "A dystopian trilogy where teenagers fight for survival.",
+    "id": 9,
+    "author": "Suzanne Collins",
+    "publicationDate": "2008-09-14",
+    "genre": "Action",
+    "price": 22.99
+  },
+  {
+    "title": "The Hobbit",
+    "description": "The adventurous journey of Bilbo Baggins.",
+    "id": 10,
+    "author": "J.R.R. Tolkien",
+    "publicationDate": "1937-09-21",
+    "genre": "Fantasy",
+    "price": 20.99
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "description": "A coming-of-age novel with a rebellious protagonist.",
+    "id": 11,
+    "author": "J.D. Salinger",
+    "publicationDate": "1951-07-16",
+    "genre": "Drama",
+    "price": 17.99
+  },
+  {
+    "title": "Jurassic Park",
+    "description": "A thrilling science fiction novel about cloned dinosaurs.",
+    "id": 12,
+    "author": "Michael Crichton",
+    "publicationDate": "1990-11-20",
+    "genre": "Science Fiction",
+    "price": 23.99
+  },
+  {
+    "title": "Gone Girl",
+    "description": "A psychological thriller about a missing woman.",
+    "id": 13,
+    "author": "Gillian Flynn",
+    "publicationDate": "2012-05-24",
+    "genre": "Mystery",
+    "price": 19.99
+  },
+  {
+    "title": "The Lord of the Rings",
+    "description": "The epic fantasy trilogy of Middle-earth.",
+    "id": 14,
+    "author": "J.R.R. Tolkien",
+    "publicationDate": "1954-07-29",
+    "genre": "Fantasy",
+    "price": 27.99
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "description": "A gripping mystery involving a journalist and a hacker.",
+    "id": 15,
+    "author": "Stieg Larsson",
+    "publicationDate": "2005-08-16",
+    "genre": "Thriller",
+    "price": 25.99
+  },
+  {
+    "title": "The Maze Runner",
+    "description": "A dystopian novel where teenagers navigate a deadly maze.",
+    "id": 16,
+    "author": "James Dashner",
+    "publicationDate": "2009-10-06",
+    "genre": "Action",
+    "price": 21.99
+  },
+  {
+    "title": "Frankenstein",
+    "description": "A classic Gothic novel exploring the consequences of scientific hubris.",
+    "id": 17,
+    "author": "Mary Shelley",
+    "publicationDate": "1818-01-01",
+    "genre": "Horror",
+    "price": 26.99
+  },
+  {
+    "title": "The Alchemist",
+    "description": "A philosophical novel about a young Andalusian shepherd's journey.",
+    "id": 18,
+    "author": "Paulo Coelho",
+    "publicationDate": "1988-01-01",
+    "genre": "Adventure",
+    "price": 16.99
+  },
+  {
+    "title": "The Road",
+    "description": "A post-apocalyptic novel exploring the survival of a father and son.",
+    "id": 19,
+    "author": "Cormac McCarthy",
+    "publicationDate": "2006-09-26",
+    "genre": "Dystopian",
+    "price": 28.99
+  },
+  {
+    "title": "The Girl on the Train",
+    "description": "A psychological thriller about a woman entangled in a missing person investigation.",
+    "id": 20,
+    "author": "Paula Hawkins",
+    "publicationDate": "2015-01-13",
+    "genre": "Mystery",
+    "price": 23.99
+  },
+  {
+    "title": "The Stand",
+    "description": "An apocalyptic horror novel set in a world devastated by a pandemic.",
+    "id": 21,
+    "author": "Stephen King",
+    "publicationDate": "1978-10-03",
+    "genre": "Horror",
+    "price": 30.99
+  },
+  {
+    "title": "The Fault in Our Stars",
+    "description": "A heartbreaking love story between two teenagers with cancer.",
+    "id": 22,
+    "author": "John Green",
+    "publicationDate": "2012-01-10",
+    "genre": "Romance",
+    "price": 19.99
+  },
+  {
+    "title": "Ender's Game",
+    "description": "A science fiction novel following a young boy's training for interstellar war.",
+    "id": 23,
+    "author": "Orson Scott Card",
+    "publicationDate": "1985-01-15",
+    "genre": "Science Fiction",
+    "price": 25.99
+  },
+  {
+    "title": "The Chronicles of Narnia",
+    "description": "A series of seven high fantasy novels set in the fictional land of Narnia.",
+    "id": 24,
+    "author": "C.S. Lewis",
+    "publicationDate": "1950-10-16",
+    "genre": "Fantasy",
+    "price": 26.99
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "description": "A psychological horror-thriller involving an FBI agent and a cannibalistic serial killer.",
+    "id": 25,
+    "author": "Thomas Harris",
+    "publicationDate": "1988-05-13",
+    "genre": "Thriller",
+    "price": 29.99
+  },
+  {
+    "title": "The Picture of Dorian Gray",
+    "description": "A philosophical novel exploring the consequences of a hedonistic lifestyle.",
+    "id": 26,
+    "author": "Oscar Wilde",
+    "publicationDate": "1890-06-20",
+    "genre": "Gothic",
+    "price": 20.99
+  },
+  {
+    "title": "The Kite Runner",
+    "description": "A novel exploring friendship, betrayal, and redemption in Afghanistan.",
+    "id": 27,
+    "author": "Khaled Hosseini",
+    "publicationDate": "2003-05-29",
+    "genre": "Drama",
+    "price": 24.99
+  },
+  {
+    "title": "Brave New World",
+    "description": "A dystopian novel exploring a futuristic society's control over individuals.",
+    "id": 28,
+    "author": "Aldous Huxley",
+    "publicationDate": "1932-01-01",
+    "genre": "Science Fiction",
+    "price": 22.99
+  },
+  {
+    "title": "One Hundred Years of Solitude",
+    "description": "A magical realist novel depicting the Buendía family in the fictional town of Macondo.",
+    "id": 29,
+    "author": "Gabriel García Márquez",
+    "publicationDate": "1967-05-30",
+    "genre": "Magical Realism",
+    "price": 27.99
+  },
+  {
+    "title": "The Outsiders",
+    "description": "A coming-of-age novel exploring the conflicts between social classes.",
+    "id": 30,
+    "author": "S.E. Hinton",
+    "publicationDate": "1967-04-24",
+    "genre": "Young Adult",
+    "price": 18.99
+  }
+]
