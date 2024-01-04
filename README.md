@@ -1,37 +1,8 @@
-# Quantom Tech Store (project - Full Stack App)
+# Bookstore
 
 ![](client/public/logo-addbg-preview.png)
 
-An Full Stack app project, we created an store, while using the newest technologies
-
-# Software Development Team
-
-We enjoyed working together, we learned a lot from each other, each supported and taught the other the technologies he knew and innovations he researched
-
-| Name           | Role                          | quote     |
-| -------------- | ----------------------------- | --------- |
-| _Avichai Iluz_ | `'Back-End Developer + Data'` | 'bla bla' |
-
-# Files & Folders
-
-- **Client** - Front End...
--
--
-
-# Technologies
-
-## Programming languages
-
-## Tools and environments
-
-## Database
-
-**mongoDB**
-![](https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Image-HD.png)
-
-# Synchronization
-
-Synchronization is one of the biggest Issues in our project we used **Google Drive** and **GitHub** (Git) to collaborate with each other, and integrate easily into our workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
+A Full-Stack web app project displaing a Bookstore catalog.
 
 # Getting Started
 
