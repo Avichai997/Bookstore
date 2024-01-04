@@ -21,7 +21,7 @@
           },
           {
             "name": "Client",
-            "commands": ["cd client", "npm i", "npm run huskyInit", "npm run dev:local"]
+            "commands": ["cd client", "npm i", "npm run huskyInit", "npm run development"]
           }
         ]
       }

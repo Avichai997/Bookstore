@@ -4,23 +4,18 @@
   "version": "1.0.5",
   "type": "module",
   "scripts": {
-    "dev:local": "vite --mode developmentLocal",
-    "dev:dev": "vite --mode development",
-    "dev:test": "vite --mode test",
-    "dev:preProduction": "vite --mode preProduction",
-    "build:local": "vite build --mode developmentLocal",
+    "dev:development": "vite --mode development",
+    "dev:production": "vite --mode production",
     "build:dev": "vite build --mode development",
-    "build:test": "vite build --mode test",
-    "build:preProduction": "vite build --mode preProduction",
     "build:production": "vite build --mode production",
+    "preview:dev": "vite preview --mode development",
+    "preview:production": "vite preview --mode production",
     "test:watch": "vitest",
     "testOnce": "vitest --run",
     "test:ui": "vitest --ui",
-    "previewBuild": "vite preview",
     "merge": "git pull && git pull origin Development && git merge Development",
     "huskyInit": "cd.. && husky install && cd .husky/_ && del /f .gitignore",
-    "lint": "tsc && prettier --write --cache --log-level silent . && cspell --cache --no-progress ../**/* && eslint --fix --cache.",
-    "lint:parallel": "concurrently \"cd ../server && npm run lint\" \"npm run lint\""
+    "lint": "tsc && prettier --write --cache --log-level silent . && cspell --cache --no-progress ../**/* && eslint --fix --cache."
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
