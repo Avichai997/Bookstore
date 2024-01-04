@@ -16,8 +16,16 @@
   box-sizing: border-box;
 }
 
+.muirtl-1648tcm-MuiButtonBase-root-MuiButton-root.Mui-disabled {
+  pointer-events: visible;
+  cursor: not-allowed;
+}
 #root {
   height: 100%;
+  width: 100%;
+}
+button {
+  font-family: Rubik !important;
 }
 button:not(:disabled) {
   cursor: pointer;
@@ -72,6 +80,7 @@ button:disabled {
     var(--color-pinkish-red) -56.42%,
     var(--color-red) 56.42%
   );
+  --color-red-linear-gradient-switch: linear-gradient(180deg, #fdb5b0 -56.42%, #d32a1f 56.42%);
   --color-dark-orange-linear-gradient: linear-gradient(
     0deg,
     var(--color-white) -56.42%,
@@ -92,6 +101,7 @@ html,
 body {
   position: relative;
   height: 100%;
+  width: 100%;
   overflow-y: hidden;
   direction: rtl;
 }
@@ -108,4 +118,13 @@ a {
 ::-webkit-scrollbar {
   width: 5px;
   height: inherit;
+}
+.Mui-disabled,
+select:disabled {
+  cursor: not-allowed !important;
+  pointer-events: visible !important;
+}
+button[class*='saveFormBtn']:not(:disabled) {
+  background: var(--color-shual);
+  color: var(--color-white);
 }

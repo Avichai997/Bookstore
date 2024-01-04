@@ -1,4 +1,3 @@
-import { protect, restrictTo } from '@Controllers/authController';
 import express from 'express';
 import {
   getAllBooks,
@@ -12,17 +11,8 @@ import {
 
 const router = express.Router();
 
-router
-  .route('/')
-  .get(getAllBooks)
-  .post(protect, restrictTo('admin'), createBook)
-  .patch(protect, restrictTo('admin'), bulkUpdateBooks)
-  .delete(protect, restrictTo('admin'), deleteManyBooks);
+router.route('/').get(getAllBooks).post(createBook).patch(bulkUpdateBooks).delete(deleteManyBooks);
 
-router
-  .route('/:id')
-  .get(getBook)
-  .patch(protect, restrictTo('admin'), updateBook)
-  .delete(protect, restrictTo('admin'), deleteBook);
+router.route('/:id').get(getBook).patch(updateBook).delete(deleteBook);
 
 export default router;

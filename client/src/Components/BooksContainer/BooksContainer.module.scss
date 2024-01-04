@@ -1,0 +1,39 @@
+.booksContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: thin;
+  direction: ltr;
+  position: relative;
+
+  .title {
+    width: 100%;
+    color: var(--color-shual);
+    padding: 20px;
+    padding-right: 0px;
+    text-align: right;
+    font-size: 25px;
+  }
+
+  .booksCards {
+    overflow: auto;
+
+    .books {
+      direction: rtl;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, max(329px));
+      row-gap: 10px;
+      padding-right: 5px;
+      padding-left: 2px;
+
+      .bookCard {
+        direction: rtl;
+        height: 510px;
+        width: 310px;
+        margin-bottom: 10px;
+        margin-left: 19px;
+      }
+    }
+  }
+}

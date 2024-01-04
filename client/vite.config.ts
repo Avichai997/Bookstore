@@ -43,6 +43,7 @@ export default defineConfig(({ mode }) => {
       alias: {
         '@public': join(__dirname, 'public'),
         '@Assets': join(__dirname, 'src/Assets'),
+        '@Pages': join(__dirname, 'src/Pages'),
         '@Components': join(__dirname, 'src/Components'),
         '@ApiService': join(__dirname, 'src/ApiService'),
         '@Interfaces': join(__dirname, 'src/ApiService/Interfaces'),

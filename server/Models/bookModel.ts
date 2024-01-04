@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
-import { IBookDocument, genres } from '@Interfaces/IBook';
+import { IBook, genres } from '@Interfaces/IBook';
 
-const bookSchema = new Schema<IBookDocument>({
+const bookSchema = new Schema<IBook>({
   title: { type: String, required: true },
   description: { type: String, required: true },
   author: { type: String, required: true },
@@ -14,6 +14,6 @@ const bookSchema = new Schema<IBookDocument>({
   price: { type: Number, required: true },
 });
 
-const BookModel = model<IBookDocument>('Book', bookSchema);
+const BookModel = model<IBook>('Book', bookSchema);
 
 export default BookModel;

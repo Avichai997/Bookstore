@@ -1,0 +1,22 @@
+.TopBar {
+  width: 100%;
+  display: flex;
+  background: var(--color-hover);
+  padding: 5px 0px;
+  align-items: center;
+  flex-direction: column;
+
+  .appTitle {
+    color: var(--color-shual);
+    font-size: 24px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+  }
+  .separatorLine {
+    width: 100%;
+    border: 1px solid var(--color-shual);
+    top: 200px;
+    margin-top: 5px;
+  }
+}
