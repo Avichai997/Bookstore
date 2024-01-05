@@ -5,7 +5,7 @@
     "id": 1,
     "author": "J.K. Rowling",
     "publicationDate": "1997-06-26",
-    "genre": "Fantasy",
+    "genre": "Science Fiction",
     "price": 19.99
   },
   {
@@ -86,7 +86,7 @@
     "id": 10,
     "author": "J.R.R. Tolkien",
     "publicationDate": "1937-09-21",
-    "genre": "Fantasy",
+    "genre": "Science Fiction",
     "price": 20.99
   },
   {
@@ -122,7 +122,7 @@
     "id": 14,
     "author": "J.R.R. Tolkien",
     "publicationDate": "1954-07-29",
-    "genre": "Fantasy",
+    "genre": "Science Fiction",
     "price": 27.99
   },
   {
@@ -212,7 +212,7 @@
     "id": 24,
     "author": "C.S. Lewis",
     "publicationDate": "1950-10-16",
-    "genre": "Fantasy",
+    "genre": "Science Fiction",
     "price": 26.99
   },
   {

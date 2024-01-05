@@ -14,10 +14,11 @@ export interface IBook {
   title: string;
   description: string;
   id?: string;
+  _id?: string;
   author: string;
-  publicationDate: Date;
+  publicationDate: string;
   genre: Genre;
   price: number;
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt?: Date;
+  updatedAt?: Date;
 }

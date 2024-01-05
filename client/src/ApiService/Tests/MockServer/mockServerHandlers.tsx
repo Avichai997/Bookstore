@@ -1,28 +1,23 @@
 import { rest } from 'msw';
-import { SOME_QUERY_KEY } from '@CommonConstants';
-
-interface IGoal {
-  id: string;
-}
-const mockData = {
-  id: '1',
-};
+import { IBook } from '@ApiService/Interfaces/IBooks';
+import { BOOKS_QUERY_KEY } from '@CommonConstants';
+import { mockBook } from './mockData';
 
 export const mockServerHandlers = [
   // Goal Handlers
-  rest.get(`*/${SOME_QUERY_KEY}`, (req, res, ctx) =>
-    res(ctx.status(200), ctx.json<IGoal[]>([mockData]))
+  rest.get(`*/${BOOKS_QUERY_KEY}`, (req, res, ctx) =>
+    res(ctx.status(200), ctx.json<IBook[]>([mockBook]))
   ),
-  rest.get(`*/${SOME_QUERY_KEY}/:id`, (req, res, ctx) =>
-    res(ctx.status(200), ctx.json<IGoal>(mockData))
+  rest.get(`*/${BOOKS_QUERY_KEY}/:id`, (req, res, ctx) =>
+    res(ctx.status(200), ctx.json<IBook>(mockBook))
   ),
-  rest.post(`*/${SOME_QUERY_KEY}`, (req, res, ctx) =>
-    res(ctx.status(200), ctx.json<IGoal>(mockData))
+  rest.post(`*/${BOOKS_QUERY_KEY}`, (req, res, ctx) =>
+    res(ctx.status(200), ctx.json<IBook>(mockBook))
   ),
-  rest.put(`*/${SOME_QUERY_KEY}/:id`, (req, res, ctx) =>
-    res(ctx.status(200), ctx.json<IGoal>(mockData))
+  rest.patch(`*/${BOOKS_QUERY_KEY}/:id`, (req, res, ctx) =>
+    res(ctx.status(200), ctx.json<IBook>(mockBook))
   ),
-  rest.delete(`*/${SOME_QUERY_KEY}/:id`, (req, res, ctx) =>
-    res(ctx.status(200), ctx.json<IGoal['id']>('Success deleting Goal'))
+  rest.delete(`*/${BOOKS_QUERY_KEY}/:id`, (req, res, ctx) =>
+    res(ctx.status(200), ctx.json<IBook['id']>('Success deleting Goal'))
   ),
 ];

@@ -538,8 +538,8 @@ var __decorate$2w =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -606,8 +606,8 @@ var __decorate$2v =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -702,8 +702,8 @@ var __decorate$2u =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -1838,8 +1838,8 @@ var __decorate$2t =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -2078,8 +2078,8 @@ var __decorate$2s =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -2421,8 +2421,8 @@ var __decorate$2r =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -2705,8 +2705,8 @@ var ToolPanelColumnGroupComp = /** @class */ (function (_super) {
       checkboxValue === undefined
         ? translate('ariaIndeterminate', 'indeterminate')
         : checkboxValue
-        ? translate('ariaVisible', 'visible')
-        : translate('ariaHidden', 'hidden');
+          ? translate('ariaVisible', 'visible')
+          : translate('ariaHidden', 'hidden');
     var visibilityLabel = translate('ariaToggleVisibility', 'Press SPACE to toggle visibility');
     _.setAriaLabel(this.focusWrapper, this.displayName + ' ' + columnLabel);
     this.cbSelect.setInputAriaLabel(visibilityLabel + ' (' + state + ')');
@@ -2877,8 +2877,8 @@ var __decorate$2q =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -3121,8 +3121,8 @@ var __decorate$2p =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -3459,8 +3459,8 @@ var __decorate$2o =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -3924,8 +3924,8 @@ var __decorate$2n =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -4015,8 +4015,8 @@ var __decorate$2m =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -4386,8 +4386,8 @@ var __decorate$2l =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -5141,8 +5141,8 @@ var __decorate$2k =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -5630,8 +5630,8 @@ var __decorate$2j =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -5847,8 +5847,8 @@ var __decorate$2i =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -6117,8 +6117,8 @@ var __decorate$2h =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -6509,8 +6509,8 @@ var __decorate$2g =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -7032,8 +7032,8 @@ var __decorate$2f =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -7155,8 +7155,8 @@ var __decorate$2e =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -7316,8 +7316,8 @@ var __decorate$2d =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -7426,8 +7426,8 @@ var __decorate$2c =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -7589,8 +7589,8 @@ var __decorate$2b =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -7950,8 +7950,8 @@ var __decorate$2a =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -8189,8 +8189,8 @@ var __decorate$29 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -8312,8 +8312,8 @@ var __decorate$28 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -8469,8 +8469,8 @@ var __decorate$27 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -8731,8 +8731,8 @@ var __decorate$26 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -8847,8 +8847,8 @@ var __decorate$25 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -8942,8 +8942,8 @@ var __decorate$24 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -9129,8 +9129,8 @@ var __decorate$23 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -9245,8 +9245,8 @@ var __decorate$22 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -9577,8 +9577,8 @@ var __decorate$21 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -9806,8 +9806,8 @@ var __decorate$20 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -14123,8 +14123,8 @@ var __decorate$1$ =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -14454,8 +14454,8 @@ var __decorate$1_ =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -14606,8 +14606,8 @@ var __decorate$1Z =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -14859,8 +14859,8 @@ var __decorate$1Y =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -15126,8 +15126,8 @@ var __decorate$1X =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -15589,8 +15589,8 @@ var __decorate$1W =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -16899,14 +16899,14 @@ var Matrix = /** @class */ (function () {
         (opts === null || opts === void 0 ? void 0 : opts.scalingCenterX) == null
           ? bbcx
           : opts === null || opts === void 0
-          ? void 0
-          : opts.scalingCenterX;
+            ? void 0
+            : opts.scalingCenterX;
       scy =
         (opts === null || opts === void 0 ? void 0 : opts.scalingCenterY) == null
           ? bbcy
           : opts === null || opts === void 0
-          ? void 0
-          : opts.scalingCenterY;
+            ? void 0
+            : opts.scalingCenterY;
     }
     var r = rotation;
     var cos = Math.cos(r);
@@ -16921,14 +16921,14 @@ var Matrix = /** @class */ (function () {
         (opts === null || opts === void 0 ? void 0 : opts.rotationCenterX) == null
           ? bbcx
           : opts === null || opts === void 0
-          ? void 0
-          : opts.rotationCenterX;
+            ? void 0
+            : opts.rotationCenterX;
       rcy =
         (opts === null || opts === void 0 ? void 0 : opts.rotationCenterY) == null
           ? bbcy
           : opts === null || opts === void 0
-          ? void 0
-          : opts.rotationCenterY;
+            ? void 0
+            : opts.rotationCenterY;
     }
     var tx = translationX;
     var ty = translationY;
@@ -17187,8 +17187,8 @@ var __decorate$1V =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -17959,8 +17959,8 @@ var __decorate$1U =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -18590,8 +18590,8 @@ var __generator$f =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -20154,8 +20154,8 @@ function Validate(predicate) {
       _b !== void 0
         ? _b
         : (_c = target.constructor) === null || _c === void 0
-        ? void 0
-        : _c.name;
+          ? void 0
+          : _c.name;
     if ((targetClass === null || targetClass === void 0 ? void 0 : targetClass.length) < 3) {
       targetClass = null;
     }
@@ -20468,8 +20468,8 @@ var __decorate$1T =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -20798,8 +20798,8 @@ var __decorate$1S =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -21401,8 +21401,8 @@ var __decorate$1R =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -21663,8 +21663,8 @@ var __decorate$1Q =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -22021,8 +22021,8 @@ var __decorate$1P =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -22897,8 +22897,8 @@ var __decorate$1O =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -23063,8 +23063,8 @@ var __decorate$1N =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -23265,8 +23265,8 @@ var __decorate$1M =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -23955,8 +23955,8 @@ var __decorate$1L =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -24315,8 +24315,8 @@ var __decorate$1K =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -25655,8 +25655,8 @@ var __generator$e =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -25825,8 +25825,8 @@ var __decorate$1J =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -26350,8 +26350,8 @@ var __decorate$1I =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -26490,8 +26490,8 @@ var __decorate$1H =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -26602,8 +26602,8 @@ var __decorate$1G =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -27902,8 +27902,8 @@ var __decorate$1F =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -28177,8 +28177,8 @@ var __decorate$1E =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -28241,8 +28241,8 @@ var __decorate$1D =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -29662,8 +29662,8 @@ var __decorate$1C =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -29963,8 +29963,8 @@ var __decorate$1B =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -30616,8 +30616,8 @@ var __decorate$1A =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -30698,8 +30698,8 @@ var __generator$d =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -32032,8 +32032,8 @@ var __decorate$1z =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -32370,8 +32370,8 @@ var __generator$c =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -33384,8 +33384,8 @@ var __decorate$1y =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -33453,8 +33453,8 @@ var __decorate$1x =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -33535,8 +33535,8 @@ var __generator$b =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -35436,8 +35436,8 @@ var __decorate$1w =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -35972,8 +35972,8 @@ var __generator$a =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -36739,8 +36739,8 @@ var __generator$9 =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -37050,8 +37050,8 @@ var __generator$8 =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -37339,8 +37339,8 @@ var __decorate$1v =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -37478,8 +37478,8 @@ var __decorate$1u =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -38596,8 +38596,8 @@ var __decorate$1t =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -38712,8 +38712,8 @@ var __decorate$1s =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -38794,8 +38794,8 @@ var __generator$7 =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -39874,8 +39874,8 @@ var __decorate$1r =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -40106,8 +40106,8 @@ var __decorate$1q =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -40188,8 +40188,8 @@ var __generator$6 =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -41309,8 +41309,8 @@ var __decorate$1p =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -41391,8 +41391,8 @@ var __generator$5 =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -42109,8 +42109,8 @@ var __decorate$1o =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -42191,8 +42191,8 @@ var __generator$4 =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -42557,8 +42557,8 @@ var LineSeries = /** @class */ (function (_super) {
                 typeof yDatum === 'number' && isFinite(yDatum)
                   ? yDatum.toFixed(2)
                   : yDatum
-                  ? String(yDatum)
-                  : '';
+                    ? String(yDatum)
+                    : '';
             }
             nodeData[actualLength++] = {
               series: this,
@@ -42993,8 +42993,8 @@ var __decorate$1n =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -43075,8 +43075,8 @@ var __generator$3 =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -43579,8 +43579,8 @@ var ScatterSeries = /** @class */ (function (_super) {
             isDatumHighlighted && highlightedDatumStrokeWidth !== undefined
               ? highlightedDatumStrokeWidth
               : markerStrokeWidth !== null && markerStrokeWidth !== void 0
-              ? markerStrokeWidth
-              : 1;
+                ? markerStrokeWidth
+                : 1;
           var size =
             (_b = (_a = datum.point) === null || _a === void 0 ? void 0 : _a.size) !== null &&
             _b !== void 0
@@ -43964,8 +43964,8 @@ var __decorate$1m =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -44097,8 +44097,8 @@ var __decorate$1l =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -44179,8 +44179,8 @@ var __generator$2 =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -45848,8 +45848,8 @@ var __decorate$1k =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -46041,8 +46041,8 @@ var __decorate$1j =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -46123,8 +46123,8 @@ var __generator$1 =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -46521,8 +46521,8 @@ var TreemapSeries = /** @class */ (function (_super) {
             typeof colorScaleValue === 'string'
               ? colorScaleValue
               : isLeaf || !groupFill
-              ? colorScale.convert(colorScaleValue)
-              : groupFill;
+                ? colorScale.convert(colorScaleValue)
+                : groupFill;
           var nodeDatum = {
             datum: datum,
             depth: depth,
@@ -46736,14 +46736,14 @@ var TreemapSeries = /** @class */ (function (_super) {
             isDatumHighlighted && highlightedStroke !== undefined
               ? highlightedStroke
               : datum.isLeaf
-              ? tileStroke
-              : groupStroke;
+                ? tileStroke
+                : groupStroke;
           var strokeWidth =
             isDatumHighlighted && highlightedDatumStrokeWidth !== undefined
               ? highlightedDatumStrokeWidth
               : datum.isLeaf
-              ? tileStrokeWidth
-              : groupStrokeWidth;
+                ? tileStrokeWidth
+                : groupStrokeWidth;
           var format = _this.getTileFormat(datum, isDatumHighlighted);
           var fillColor = validateColor(
             (_b = format === null || format === void 0 ? void 0 : format.fill) !== null &&
@@ -46923,8 +46923,8 @@ var TreemapSeries = /** @class */ (function (_super) {
           ? valueConfig.formatter
             ? valueConfig.formatter({ datum: datum.datum })
             : valueConfig.key
-            ? datum.datum[valueConfig.key]
-            : ''
+              ? datum.datum[valueConfig.key]
+              : ''
           : ''
       );
       var valueSize = getTextSize(valueText, valueStyle);
@@ -48156,8 +48156,8 @@ var __decorate$1i =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -48350,8 +48350,8 @@ var __decorate$1h =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -48886,8 +48886,8 @@ var __decorate$1g =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -49168,8 +49168,8 @@ var __decorate$1f =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -50313,9 +50313,9 @@ function optionsType(input) {
     (_a = input.type) !== null && _a !== void 0
       ? _a
       : (_c = (_b = input.series) === null || _b === void 0 ? void 0 : _b[0]) === null ||
-        _c === void 0
-      ? void 0
-      : _c.type) !== null && _d !== void 0
+          _c === void 0
+        ? void 0
+        : _c.type) !== null && _d !== void 0
     ? _d
     : 'line';
 }
@@ -50961,8 +50961,8 @@ var __decorate$1e =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -51126,8 +51126,8 @@ var __decorate$1d =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -51620,8 +51620,8 @@ var __decorate$1c =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -51884,8 +51884,8 @@ var __generator =
                 op[0] & 2
                   ? y['return']
                   : op[0]
-                  ? y['throw'] || ((t = y['return']) && t.call(y), 0)
-                  : y.next) &&
+                    ? y['throw'] || ((t = y['return']) && t.call(y), 0)
+                    : y.next) &&
               !(t = t.call(y, op[1])).done)
           )
             return t;
@@ -52726,8 +52726,8 @@ var __decorate$1b =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -53094,8 +53094,8 @@ var __decorate$1a =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -53747,8 +53747,8 @@ function createAgChartTheme(chartProxyParams, proxy) {
   var rootTheme = stockTheme
     ? { baseTheme: themeName }
     : (_a = lookupCustomChartTheme(chartProxyParams, themeName)) !== null && _a !== void 0
-    ? _a
-    : {};
+      ? _a
+      : {};
   var gridOptionsThemeOverrides = chartProxyParams.getGridOptionsChartThemeOverrides();
   var apiThemeOverrides = chartProxyParams.apiChartThemeOverrides;
   var standaloneChartType = getSeriesType(chartProxyParams.chartType);
@@ -53951,8 +53951,8 @@ var __decorate$19 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -54352,8 +54352,8 @@ var __decorate$18 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -54964,8 +54964,8 @@ var __decorate$17 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -55209,8 +55209,8 @@ var __decorate$16 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -55442,8 +55442,8 @@ var __decorate$15 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -55574,8 +55574,8 @@ var __decorate$14 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -55798,8 +55798,8 @@ var __decorate$13 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -56071,8 +56071,8 @@ var __decorate$12 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -56182,8 +56182,8 @@ var __decorate$11 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -56325,8 +56325,8 @@ var __decorate$10 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -56420,8 +56420,8 @@ var __decorate$$ =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -56600,8 +56600,8 @@ var __decorate$_ =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -56714,8 +56714,8 @@ var __decorate$Z =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -56916,8 +56916,8 @@ var __decorate$Y =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -57092,8 +57092,8 @@ var __decorate$X =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -57210,8 +57210,8 @@ var __decorate$W =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -57554,8 +57554,8 @@ var SeriesPanel = /** @class */ (function (_super) {
     return ct === 'columnLineCombo'
       ? 'column'
       : ct === 'areaColumnCombo'
-      ? 'area'
-      : getSeriesType(ct);
+        ? 'area'
+        : getSeriesType(ct);
   };
   SeriesPanel.prototype.getSeriesSelectOptions = function () {
     var _this = this;
@@ -57645,8 +57645,8 @@ var __decorate$V =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -57799,8 +57799,8 @@ var __decorate$U =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -57871,8 +57871,8 @@ var __decorate$T =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -59397,8 +59397,8 @@ var __decorate$S =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -59567,8 +59567,8 @@ var __decorate$R =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -59798,8 +59798,8 @@ var __decorate$Q =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -59930,8 +59930,8 @@ var __decorate$P =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -60408,8 +60408,8 @@ var __decorate$O =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -60730,9 +60730,9 @@ var ChartProxy = /** @class */ (function () {
     var existingOptions = this.clearThemeOverrides
       ? {}
       : (_b = (_a = this.chart) === null || _a === void 0 ? void 0 : _a.getOptions()) !== null &&
-        _b !== void 0
-      ? _b
-      : {};
+          _b !== void 0
+        ? _b
+        : {};
     var formattingPanelOverrides =
       this.chart != null ? { overrides: this.getActiveFormattingPanelOverrides() } : {};
     this.clearThemeOverrides = false;
@@ -62163,8 +62163,8 @@ var __decorate$N =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -62900,8 +62900,8 @@ function heuristicVersionDetection(model) {
       ? void 0
       : chartOptions.seriesDefaults
     : chartOptions === null || chartOptions === void 0
-    ? void 0
-    : chartOptions[Object.keys(chartOptions)[0]];
+      ? void 0
+      : chartOptions[Object.keys(chartOptions)[0]];
   var hints = {
     '27.0.0': hasKey(modelAny, 'seriesChartTypes'),
     '26.2.0': !hasKey(chartOptions, 'seriesDefaults'),
@@ -63160,8 +63160,8 @@ var __decorate$M =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -63551,8 +63551,8 @@ var __decorate$L =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -63726,8 +63726,8 @@ var __decorate$K =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -63914,8 +63914,8 @@ var __decorate$J =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -64837,8 +64837,8 @@ var __decorate$I =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -65141,8 +65141,8 @@ var __decorate$H =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -65812,8 +65812,8 @@ var __decorate$G =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -65882,8 +65882,8 @@ var __decorate$F =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -66472,8 +66472,8 @@ var __decorate$E =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -66695,8 +66695,8 @@ var __decorate$D =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -66859,8 +66859,8 @@ var __decorate$C =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -67520,8 +67520,8 @@ var __decorate$B =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -67827,8 +67827,8 @@ var __decorate$A =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -68223,8 +68223,8 @@ var __decorate$z =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -68750,8 +68750,8 @@ var __decorate$y =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -69225,8 +69225,8 @@ var __decorate$x =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -69410,8 +69410,8 @@ var __decorate$w =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -69518,8 +69518,8 @@ var __decorate$v =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -69813,8 +69813,8 @@ var __decorate$u =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -70531,8 +70531,8 @@ var __decorate$t =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -70912,8 +70912,8 @@ var __decorate$s =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -71900,8 +71900,8 @@ var __decorate$r =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -72560,8 +72560,8 @@ var __decorate$q =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -73155,8 +73155,8 @@ var __decorate$p =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -73346,8 +73346,8 @@ var __decorate$o =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -73693,8 +73693,8 @@ var __decorate$n =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -73766,8 +73766,8 @@ var __decorate$m =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -73938,8 +73938,8 @@ var __decorate$l =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -74038,8 +74038,8 @@ var __decorate$k =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -74206,8 +74206,8 @@ var __decorate$j =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -74285,8 +74285,8 @@ var __decorate$i =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -74413,8 +74413,8 @@ var __decorate$h =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -74487,8 +74487,8 @@ var __decorate$g =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -74752,8 +74752,8 @@ var __decorate$f =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -75212,8 +75212,8 @@ var __decorate$e =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -76703,8 +76703,8 @@ var __decorate$d =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -76859,8 +76859,8 @@ var SetFilterListItem = /** @class */ (function (_super) {
       checkboxValue === undefined
         ? translate('ariaIndeterminate', 'indeterminate')
         : checkboxValue
-        ? translate('ariaVisible', 'visible')
-        : translate('ariaHidden', 'hidden');
+          ? translate('ariaVisible', 'visible')
+          : translate('ariaHidden', 'hidden');
     var visibilityLabel = translate('ariaToggleVisibility', 'Press SPACE to toggle visibility');
     _.setAriaLabelledBy(this.eCheckbox.getInputElement(), undefined);
     this.eCheckbox.setInputAriaLabel(visibilityLabel + ' (' + state + ')');
@@ -77085,8 +77085,8 @@ var __decorate$c =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -78352,8 +78352,8 @@ var __decorate$b =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -78490,8 +78490,8 @@ var __decorate$a =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -78550,8 +78550,8 @@ var __decorate$9 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -78676,8 +78676,8 @@ var __decorate$8 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -78739,8 +78739,8 @@ var __decorate$7 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -78855,8 +78855,8 @@ var __decorate$6 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -78954,8 +78954,8 @@ var __decorate$5 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -79046,8 +79046,8 @@ var __decorate$4 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -79143,8 +79143,8 @@ var __decorate$3 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -79433,8 +79433,8 @@ var __decorate$2 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -82246,8 +82246,8 @@ var __decorate$1 =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);
@@ -82367,8 +82367,8 @@ var __decorate =
         c < 3
           ? target
           : desc === null
-          ? (desc = Object.getOwnPropertyDescriptor(target, key))
-          : desc,
+            ? (desc = Object.getOwnPropertyDescriptor(target, key))
+            : desc,
       d;
     if (typeof Reflect === 'object' && typeof Reflect.decorate === 'function')
       r = Reflect.decorate(decorators, target, key, desc);

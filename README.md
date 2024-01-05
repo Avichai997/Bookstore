@@ -2,7 +2,7 @@
 
 ![](client/public/logo-addbg-preview.png)
 
-A Full-Stack web app project displaing a Bookstore catalog.
+A Full-Stack web app project displaying a Bookstore catalog.
 
 # Getting Started
 
