@@ -1,5 +1,5 @@
 import { NextFunction } from 'express';
-import { Model, Query } from 'mongoose';
+import { Model, Query, UnpackedIntersection } from 'mongoose';
 import { IPopulateOptions } from '@Interfaces/common';
 import catchAsync from '@Utils/catchAsync';
 import AppError from '@Utils/AppError';
@@ -36,7 +36,9 @@ export const getOne = <T>(Model: Model<T>, populateOptions?: IPopulateOptions) =
   catchAsync(async (req, res, next: NextFunction) => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let query: Query<any, T> = Model.findById(req.params.id);
-    if (populateOptions) query = query.populate(populateOptions);
+    if (populateOptions)
+      (query as Query<unknown, T, object, UnpackedIntersection<T, unknown>, 'find'>) =
+        query.populate(populateOptions);
 
     const doc = await query;
 

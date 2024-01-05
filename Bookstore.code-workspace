@@ -21,7 +21,7 @@
           },
           {
             "name": "Client",
-            "commands": ["cd client", "npm i", "npm run huskyInit", "npm run development"]
+            "commands": ["cd client", "npm i", "npm run huskyInit", "npm run dev:development"]
           }
         ]
       }
@@ -41,6 +41,8 @@
     "prettier.printWidth": 100,
     "eslint.enable": true,
     "eslint.validate": ["typescript", "javascript", "html"],
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "typescript.referencesCodeLens.enabled": true
   }
 }

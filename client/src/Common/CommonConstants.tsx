@@ -1,7 +1,7 @@
 /* eslint @typescript-eslint/naming-convention: ['error',{ selector: 'variable', format: ['UPPER_CASE'] }] */
 
 // React Query keys
-export const SOME_QUERY_KEY = 'SomeQueryKey';
+export const BOOKS_QUERY_KEY = 'books';
 
 // Error Boundary Fallback
 export const SHOW_ERROR_MSG = 'הצג שגיאה';

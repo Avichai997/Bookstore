@@ -11,21 +11,21 @@ export default class Email {
 
   public url: string;
 
-  public from: string;
+  // public from: string;
 
   constructor(user: IUsers, url: string) {
     this.to = user.email;
     this.firstName = user.firstName;
     this.url = url;
-    this.from = process.env.EMAIL_FROM;
+    // this.from = process.env.EMAIL_FROM;
   }
 
   newTransport() {
     if (process.env.NODE_ENV === 'production') {
       // SendinBlue
       return nodemailer.createTransport({
-        host: process.env.SENDINBLUE_HOST,
-        port: process.env.SENDINBLUE_PORT,
+        // host: process.env.SENDINBLUE_HOST,
+        // port: process.env.SENDINBLUE_PORT,
         auth: {
           user: process.env.SENDINBLUE_USERNAME,
           pass: process.env.SENDINBLUE_SMTP_KEY,
@@ -34,8 +34,8 @@ export default class Email {
     }
 
     return nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
-      port: process.env.EMAIL_PORT,
+      // host: process.env.EMAIL_HOST,
+      // port: process.env.EMAIL_PORT,
       auth: {
         user: process.env.EMAIL_USERNAME,
         pass: process.env.EMAIL_PASSWORD,
@@ -55,7 +55,7 @@ export default class Email {
 
     // 2) Define email options
     const mailOptions = {
-      from: this.from,
+      // from: this.from,
       to: this.to,
       subject,
       html,

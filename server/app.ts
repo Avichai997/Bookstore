@@ -6,17 +6,17 @@ import compression from 'compression';
 import globalErrorHandler from '@Controllers/errorController';
 import AppError from '@Utils/AppError';
 import userRouter from '@Routes/userRouter';
-import categoryRouter from '@/Routes/bookRouter';
+import bookRouter from '@Routes/bookRouter';
 import {
   helmetMiddleware,
   corsMiddleware,
-  developmentLoggingMiddleware,
   xssMiddleware,
   limiterMiddleware,
   csrfProtectionMiddleware,
   mongoSanitizeMiddleware,
   hppMiddleware,
 } from '@Middlewares/security';
+import morgan from 'morgan';
 import { version } from './package.json';
 
 const app = express();
@@ -31,7 +31,7 @@ app.use(compression());
 // Security middlewares
 app.use(helmetMiddleware);
 app.use(corsMiddleware);
-app.use(developmentLoggingMiddleware);
+app.use(morgan('dev'));
 app.use(xssMiddleware);
 app.use('/api', limiterMiddleware);
 app.use(csrfProtectionMiddleware);
@@ -40,7 +40,7 @@ app.use(hppMiddleware);
 
 // 2) ROUTES
 app.use('/api/users', userRouter);
-app.use('/api/books', categoryRouter);
+app.use('/api/books', bookRouter);
 
 app.get('/api/health', (req, res) => res.send(`Server is up and running v${version}!`));
 

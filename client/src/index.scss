@@ -74,7 +74,6 @@ button:disabled {
   --color-assignment-table-level3: #eff9f7;
   --color-black-border: rgba(0, 0, 0, 25%);
   --color-black-border2: rgba(0, 0, 0, 10%);
-  --color-goal-azure: #d5e1f4;
   --color-red-linear-gradient: linear-gradient(
     0deg,
     var(--color-pinkish-red) -56.42%,
@@ -103,7 +102,7 @@ body {
   height: 100%;
   width: 100%;
   overflow-y: hidden;
-  direction: rtl;
+  direction: ltr;
 }
 a {
   text-decoration: none;

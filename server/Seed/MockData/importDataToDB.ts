@@ -1,23 +1,16 @@
 /* eslint-disable no-console */
-import Order from '@Models/orderModel';
-import User from '@Models/userModel';
-import dotenv from 'dotenv';
+import Book from '@/Models/bookModel';
+// import User from '@Models/userModel';
 import { readFileSync } from 'fs';
 import mongoose from 'mongoose';
 
 // 1) Connect to DB:
 const connection = mongoose.connection;
 
-dotenv.config();
-
-const { DATABASE, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME } = process.env;
-
-const DB_CONNECTION_STRING = DATABASE.replace('<DB_USERNAME>', DATABASE_USERNAME)
-  .replace('<DB_PASSWORD>', DATABASE_PASSWORD)
-  .replace('<DB_NAME>', DATABASE_NAME);
+const { DATABASE } = process.env;
 
 // don't allow mongoose save fields that don't exist in model's schema
-mongoose.set('strictQuery', true).connect(DB_CONNECTION_STRING);
+mongoose.set('strictQuery', true).connect(DATABASE);
 mongoose.connection.on('connected', () => {
   console.log('DB connection successful!', '\x1b[0m');
 });
@@ -25,14 +18,14 @@ mongoose.connection.on('connected', () => {
 connection.once('open', () => seedData());
 
 // 2) Read Json files:
-const users = JSON.parse(readFileSync(`${__dirname}/users.json`, 'utf-8'));
-const orders = JSON.parse(readFileSync(`${__dirname}/orders.json`, 'utf-8'));
+// const users = JSON.parse(readFileSync(`${__dirname}/users.json`, 'utf-8'));
+const books = JSON.parse(readFileSync(`${__dirname}/books.json`, 'utf-8'));
 
 // IMPORT DATA INTO DB
 const importAllData = async () => {
   try {
-    await User.create(users, { validateBeforeSave: false });
-    await Order.create(orders, { validateBeforeSave: false });
+    // await User.create(users, { validateBeforeSave: false });
+    await Book.create(books, { validateBeforeSave: false });
     console.log('Data seeded in DB!');
   } catch (err) {
     console.log(err);

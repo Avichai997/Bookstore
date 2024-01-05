@@ -6,7 +6,7 @@ import cors, { CorsOptions } from 'cors';
 import loginLimiter from '@Utils/loginLimiter';
 import { ONE_HOUR } from '@Utils/commonConstants';
 import AppError from '@Utils/AppError';
-import { HOST, NODE_ENV, PORT } from '@Utils/environment';
+import { CLIENT_URL, NODE_ENV } from '@Utils/environment';
 import mongoSanitize from 'express-mongo-sanitize';
 import hpp from 'hpp';
 import csrf from 'csurf';
@@ -18,7 +18,7 @@ const helmetMiddleware = helmet({
 });
 
 // CORS
-const whitelist = [`${HOST}:${PORT}`, 'http://127.0.0.1:5000'];
+const whitelist = [`${CLIENT_URL}`];
 const corsOptions: CorsOptions = {
   credentials: true, // allow cookies
   origin: (origin, callback) => {
@@ -34,9 +34,7 @@ const corsOptions: CorsOptions = {
 const corsMiddleware = cors(corsOptions);
 
 // Development logging
-const developmentLoggingMiddleware = (app: Express) => {
-  if (NODE_ENV === 'development') app.use(morgan('dev'));
-};
+const developmentLoggingMiddleware = () => morgan('dev');
 
 // Data sanitization against XSS
 const xssMiddleware = xss();

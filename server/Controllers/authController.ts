@@ -5,9 +5,9 @@ import { IUsers } from '@Interfaces/IUsers';
 import { Request, Response, NextFunction, RequestHandler } from 'express';
 import catchAsync from '@Utils/catchAsync';
 import AppError from '@Utils/AppError';
-import Email from '@Utils/email';
 import loginLimiter from '@Utils/loginLimiter';
 import { ObjectId } from 'mongoose';
+import Email from '@Utils/email';
 
 const DAY = 24 * 60 * 60 * 1000;
 
