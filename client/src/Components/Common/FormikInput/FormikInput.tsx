@@ -15,7 +15,6 @@ const FormikInput = ({
   disableUnderline = false,
   textAlign,
   outerLabel = false,
-  autofocus = false,
   ...props
 }: IFormikInput) => {
   const [field, meta, helpers] = useField(name);
@@ -73,7 +72,6 @@ const FormikInput = ({
         onChange={onChange}
         onBlur={onBlur}
         variant={props.variant || 'standard'}
-        autofocus={autofocus}
       />
     </>
   );
