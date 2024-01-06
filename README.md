@@ -12,7 +12,7 @@ Manually:
 
 - Clone the repo.
 - Open new terminal for server
-- Run: "cd server && npm set legacy-peer-deps true && npm i && npm run huskyInit && npm run dev"
+- Run: "cd server && npm set legacy-peer-deps true && npm i && npm run huskyInit && npm run seed && npm run dev"
 - Open new terminal for client
 - Run: "cd client && npm i && npm run huskyInit && npm run dev:development
 - open http://localhost:3000
