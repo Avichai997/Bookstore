@@ -43,6 +43,17 @@ export interface IOptionsFormikSelect {
   backgroundColor?: string;
 }
 
+export interface ISelectOnChangeHandler<TValues> {
+  formik: FormikProps<TValues>;
+  options: IOptionsFormikSelect[];
+  event: SelectChangeEvent<string | number>;
+  textOrValue: boolean;
+  name: string;
+  setEffectedFieldName?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  onItemClicked?: (formik: FormikProps<any>, event: SelectChangeEvent<string | number>) => void;
+  setShowPopupStatus?: ReactSetState<string | undefined>;
+}
 export interface IFormikSelect<TValues> {
   formik: FormikProps<TValues>;
   label: string;
@@ -72,15 +83,14 @@ export interface IFormikInput {
   autoFocus?: boolean;
   placeholder?: string;
   type?: HTMLInputTypeAttribute;
-  autoComplete?: string;
-  style?: CSSProperties;
-  sx?: SxProps;
-  styleTextArea?: CSSProperties;
+  style?: SxProps;
+  styleTextArea?: CSSProperties & SxProps;
   disabled?: boolean;
   multiline?: boolean;
   rows?: number;
-  className?: string;
-  requiredTextArea?: boolean;
+  disableUnderline?: boolean;
+  textAlign?: CSSProperties['textAlign'];
+  outerLabel?: boolean;
 }
 
 export type ReactSetState<TState> = React.Dispatch<React.SetStateAction<TState>>;
@@ -94,4 +104,9 @@ export interface IProtectRoute {
 export interface ISize {
   width: number | undefined;
   height: number | undefined;
+}
+
+export interface IGetTooltipStyle {
+  tooltipSx?: SxProps;
+  arrowSx?: SxProps;
 }

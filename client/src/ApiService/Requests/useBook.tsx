@@ -71,7 +71,7 @@ export const useBookCRUD = () => {
   ) => {
     UpdateBook(
       {
-        method: 'Put',
+        method: 'Patch',
         path: `${BOOKS_QUERY_KEY}/${id}`,
         headers: {},
         data,

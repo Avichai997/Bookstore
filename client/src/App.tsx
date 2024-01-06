@@ -1,8 +1,9 @@
 import ProjectStatus from '@Components/ProjectStatus/ProjectStatus';
 import ProtectRoute from '@CommonComponents/ProtectRoute/ProtectRoute';
 import { Route, Routes } from 'react-router-dom';
-import BooksCatalog from '@Pages/BooksCatalog';
+import BooksCatalog from '@Pages/BooksCatalog/BooksCatalog';
 import BooksContainer from '@Components/BooksContainer/BooksContainer';
+import CreateUpdateBook from '@Pages/CreateUpdateBook/CreateUpdateBook';
 
 const App = () => {
   return (
@@ -16,8 +17,8 @@ const App = () => {
         }
       >
         <Route index element={<BooksContainer />} />
-        {/* <Route path='Book' element={<CreateUpdateBook />} />
-        <Route path='Book/:bookId' element={<CreateUpdateBook />} />{' '} */}
+        <Route path='Book' element={<CreateUpdateBook />} />
+        <Route path='Book/:bookId' element={<CreateUpdateBook />} />
       </Route>
 
       <Route path='/ProjectStatus' element={<ProjectStatus />} />

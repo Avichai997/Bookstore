@@ -37,6 +37,7 @@ module.exports = {
     project: 'tsconfig.json',
   },
   rules: {
+    '@typescript-eslint/default-param-last': 'off',
     'import/extensions': 'off',
     'jsx-a11y/control-has-associated-label': 'off',
     'no-nested-ternary': 'off',

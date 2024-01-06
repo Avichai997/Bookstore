@@ -1,4 +1,9 @@
 import { QueryClient } from '@tanstack/react-query';
+import { TooltipProps } from '@mui/material';
+import { IGetTooltipStyle } from './CommonInterfaces';
+
+export const getObjectProperty = <T extends object>(array: T[], field: keyof T) =>
+  array.map((item) => item[field]);
 
 export function isEmptyObject(obj: object) {
   return typeof obj === 'object' && Object.keys(obj).length === 0;
@@ -13,8 +18,10 @@ export const logError = (error: Error) => {
   console.error('💥 Error from Error Boundary:', error);
 };
 
-export const emptyFunction = () => {};
+export const getDateInFormat = (date: Date | string) =>
+  new Date(date).toISOString().slice(0, 10).toString();
 
+export const emptyFunction = () => {};
 export const minLengthText = (minLength: number) => `שדה זה צריך להכיל לפחות ${minLength} תווים`;
 export const maxLengthText = (maxLength: number) =>
   `שדה זה צריך להכיל ${maxLength} תווים לכל היותר`;
@@ -68,3 +75,26 @@ export const updateRQCacheAfterDelete = (
   );
 };
 /* eslint-enable @typescript-eslint/no-explicit-any */
+
+export const getTooltipStyle = ({
+  tooltipSx,
+  arrowSx,
+}: IGetTooltipStyle = {}): TooltipProps['componentsProps'] => {
+  return {
+    tooltip: {
+      sx: {
+        width: 'auto',
+        height: 'auto',
+        padding: '8px',
+        fontSize: '16px',
+        lineHeight: '22px',
+        borderRadius: '7px',
+        border: '1px solid var(--color-shual)',
+        color: 'var(--color-shual)',
+        backgroundColor: 'var(--color-light-blue)',
+        ...tooltipSx,
+      },
+    },
+    arrow: { sx: { color: 'var(--color-shual)', ...arrowSx } },
+  };
+};

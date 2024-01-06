@@ -1,4 +1,5 @@
 /* eslint @typescript-eslint/naming-convention: ['error',{ selector: 'variable', format: ['UPPER_CASE'] }] */
+import { getTooltipStyle } from './CommonFunctions';
 
 // React Query keys
 export const BOOKS_QUERY_KEY = 'books';
@@ -15,3 +16,8 @@ export const SOME_CONST_NAME = 'some const text';
 
 // App.tsx
 export const ROUTE_NOT_FOUND = 'No Route Found!';
+
+// Tooltip styles
+export const DISABLED_BTN_TOOLTIP_SX = getTooltipStyle({
+  tooltipSx: { backgroundColor: 'var(--color-pinkish-red)', color: 'var(--color-black)' },
+});

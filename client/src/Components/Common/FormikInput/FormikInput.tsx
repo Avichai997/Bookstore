@@ -1,18 +1,20 @@
 import { IFormikInput } from '@CommonInterfaces';
-import { TextField } from '@mui/material';
+import { SxProps, TextField } from '@mui/material';
 import { useField } from 'formik';
 import { ChangeEvent, FocusEvent, useEffect, useState } from 'react';
 import useDebounce from '@Hooks/useDebounce';
-import { fontSizeLabel, requiredTextAreaStyle, sxFormikInput } from './FormikInput.StyleSheet';
+import { fontSizeLabel, fontSizeLabelOuter, sxFormikInput } from './FormikInput.StyleSheet';
 
 const FormikInput = ({
   name,
   value = '',
   label = '',
   placeholder = label,
-  style,
+  style = {},
   styleTextArea,
-  requiredTextArea,
+  disableUnderline = false,
+  textAlign,
+  outerLabel = false,
   ...props
 }: IFormikInput) => {
   const [field, meta, helpers] = useField(name);
@@ -48,15 +50,22 @@ const FormikInput = ({
 
   return (
     <>
+      {outerLabel ? <span style={fontSizeLabelOuter}>{label}</span> : <></>}
       <TextField
         {...props}
-        InputProps={{ style: !props.variant ? style : undefined }}
+        inputProps={{
+          style: styleTextArea ? { textAlign: textAlign || 'left' } : undefined,
+        }}
+        // eslint-disable-next-line react/jsx-no-duplicate-props
+        InputProps={{
+          ...(props.variant !== 'outlined' && { disableUnderline }),
+        }}
         error={!!meta.error}
         placeholder={placeholder}
         helperText={meta.error}
-        label={<span style={fontSizeLabel}>{label}</span>}
-        sx={{ ...sxFormikInput(label), ...style }}
-        style={styleTextArea || style}
+        label={!outerLabel ? <span style={fontSizeLabel}>{label}</span> : <></>}
+        sx={{ ...sxFormikInput(label), ...style } as SxProps}
+        style={styleTextArea || undefined}
         disabled={props.disabled}
         {...field}
         value={fieldValue}
@@ -64,7 +73,6 @@ const FormikInput = ({
         onBlur={onBlur}
         variant={props.variant || 'standard'}
       />
-      {requiredTextArea && <div style={requiredTextAreaStyle}>שדה חובה</div>}
     </>
   );
 };

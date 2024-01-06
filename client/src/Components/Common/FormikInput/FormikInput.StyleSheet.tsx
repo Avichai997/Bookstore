@@ -1,33 +1,32 @@
+import { SxProps } from '@mui/material';
+
 export const fontSizeLabel = {
   fontSize: '22px',
   color: 'var(--color-black)',
 };
+export const fontSizeLabelOuter = {
+  fontSize: '18px',
+  color: 'var(--color-black)',
+};
 
-export const sxFormikInput = (label: string | undefined) => {
+export const sxFormikInput = (label: string | undefined): SxProps => {
   return {
-    '&& .muirtl-1d1r5q-MuiFormHelperText-root': {
-      display: !label && 'none',
+    '& .MuiFormHelperText-root': {
+      display: !label ? 'none' : 'initial',
       color: 'var(--color-red)',
       height: '0px',
       marginTop: 0,
     },
-    '.muirtl-1c2i806-MuiFormLabel-root-MuiInputLabel-root': {
+    '& .MuiFormLabel-asterisk': {
       color: 'var(--color-red)',
+      display: !label ? 'none' : 'initial',
     },
-    before: {
-      '.muirtl-1c2i806-MuiFormLabel-root-MuiInputLabel-root': { color: 'var(--color-red)' },
-    },
-    '&& .muirtl-66dh3a-MuiInputBase-input-MuiInput-input': {
-      marginTop: '-10px',
-    },
-    '&& .muirtl-wgai2y-MuiFormLabel-asterisk': {
-      color: 'var(--color-red)',
-      display: !label && 'none',
-    },
-    '&& .MuiOutlinedInput-notchedOutline legend': {
+    '& .MuiOutlinedInput-notchedOutline legend': {
       display: 'none',
+    },
+    '& .MuiInputBase-multiline textarea': {
+      textAlign: 'left',
+      padding: '0px 5px',
     },
   };
 };
-
-export const requiredTextAreaStyle = { marginTop: '2px' };

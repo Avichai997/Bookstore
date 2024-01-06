@@ -6,7 +6,7 @@ export const genres = [
   'Romance',
   'Mystery',
   'Horror',
-] as const;
+];
 
 export type Genre = (typeof genres)[number];
 
@@ -16,7 +16,7 @@ export interface IBook {
   id?: string;
   _id?: string;
   author: string;
-  publicationDate: string;
+  publicationDate: Date;
   genre: Genre;
   price: number;
   createdAt?: Date;

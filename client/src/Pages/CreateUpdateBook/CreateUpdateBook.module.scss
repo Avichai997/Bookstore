@@ -1,0 +1,57 @@
+.bookFormContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-hover);
+  height: calc(100% - 50px);
+  direction: ltr;
+  justify-content: space-between;
+  padding-top: 6px;
+  overflow-y: auto;
+  padding-right: 6px;
+
+  .formBody {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    > div {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+
+  .bookFormFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 25px;
+    position: fixed;
+    width: 100%;
+    height: 32px;
+    padding-right: 60px;
+
+    .labelsBottom {
+      display: flex;
+      align-items: center;
+      margin-left: 0%;
+      width: 55%;
+      .labelBottom {
+        display: flex;
+        flex-direction: column;
+        width: 170px;
+      }
+    }
+  }
+  .form_button {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+
+    .saveBtn {
+      width: 93px;
+    }
+  }
+  .form_button :disabled {
+    border-color: var(--color-disabled-button) !important;
+  }
+}
