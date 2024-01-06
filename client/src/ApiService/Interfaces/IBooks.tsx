@@ -16,7 +16,7 @@ export interface IBook {
   id?: string;
   _id?: string;
   author: string;
-  publicationDate: Date;
+  publicationDate: string;
   genre: Genre;
   price: number;
   createdAt?: Date;

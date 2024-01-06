@@ -7,6 +7,7 @@ import {
 } from '@CommonFunctions';
 import { IBook } from '@ApiService/Interfaces/IBooks';
 import { BOOKS_QUERY_KEY } from '@CommonConstants';
+import { ToastSuccess } from '@CommonComponents/Toastify/Toasts';
 
 export const useGetAllBooks = (options?: QueryOptions<IBook[]>) => {
   const { data: books, ...queryInfo } = useQuery<IBook[]>({
@@ -57,6 +58,7 @@ export const useBookCRUD = () => {
       {
         onSuccess: (createdBook) => {
           updateRQCacheAfterCreate(createdBook, queryClient, BOOKS_QUERY_KEY);
+          ToastSuccess('Book created successfully');
         },
         ...options,
       }
@@ -66,7 +68,6 @@ export const useBookCRUD = () => {
   const updateBook = (
     id: string,
     data: IBook,
-    cityId: string,
     options?: UseMutationOptions<IBook, unknown, IMutation<IBook>>
   ) => {
     UpdateBook(
@@ -79,6 +80,7 @@ export const useBookCRUD = () => {
       {
         onSuccess: (updatedBook) => {
           updateRQCacheAfterUpdate(updatedBook, queryClient, BOOKS_QUERY_KEY);
+          ToastSuccess('Book updated successfully');
         },
         ...options,
       }
@@ -97,7 +99,10 @@ export const useBookCRUD = () => {
         data: {},
       },
       {
-        onSuccess: () => updateRQCacheAfterDelete(id, queryClient, BOOKS_QUERY_KEY),
+        onSuccess: () => {
+          updateRQCacheAfterDelete(id, queryClient, BOOKS_QUERY_KEY);
+          ToastSuccess('Book deleted successfully');
+        },
         ...options,
       }
     );

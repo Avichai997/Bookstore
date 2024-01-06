@@ -9,6 +9,7 @@ import FormikInput from '@CommonComponents/FormikInput/FormikInput';
 import { Button } from '@mui/material';
 import SaveErrorTooltip from '@Components/SaveErrorTooltip/SaveErrorTooltip';
 import FormikSelect from '@Components/FormikSelect/FormikSelect';
+import { getDateInFormat } from '@CommonFunctions';
 import {
   buttonsStyle,
   inputNameStyle,
@@ -17,8 +18,6 @@ import {
   styleTextArea,
 } from './CreateUpdateBook.StyleSheet';
 import classes from './CreateUpdateBook.module.scss';
-import { getDateInFormat } from '../../Common/CommonFunctions';
-import { BOOKS_QUERY_KEY } from '@Common/CommonConstants';
 
 const CreateUpdateBook = () => {
   const navigate = useNavigate();
@@ -34,7 +33,7 @@ const CreateUpdateBook = () => {
     author: currentBook?.author || '',
     publicationDate: getDateInFormat(currentBook?.publicationDate || new Date()),
     genre: currentBook?.genre || 'Action',
-    price: currentBook?.price || 0,
+    price: currentBook?.price || 1,
   };
 
   const initialValues: IBook = initialBookValues;
@@ -49,7 +48,13 @@ const CreateUpdateBook = () => {
     const buttonElement = submitBtnRef.current || undefined;
     if (buttonElement) buttonElement.disabled = true;
 
-    if (bookId) updateBook(bookId, bookValues);
+    if (bookId)
+      updateBook(bookId, bookValues, {
+        onError: () => {
+          const buttonElement = submitBtnRef.current || undefined;
+          if (buttonElement) buttonElement.disabled = false;
+        },
+      });
     else {
       createBook(bookValues);
     }

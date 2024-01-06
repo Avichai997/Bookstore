@@ -12,7 +12,6 @@ import {
   corsMiddleware,
   xssMiddleware,
   limiterMiddleware,
-  csrfProtectionMiddleware,
   mongoSanitizeMiddleware,
   hppMiddleware,
 } from '@Middlewares/security';
@@ -34,7 +33,6 @@ app.use(corsMiddleware);
 app.use(morgan('dev'));
 app.use(xssMiddleware);
 app.use('/api', limiterMiddleware);
-app.use(csrfProtectionMiddleware);
 app.use(mongoSanitizeMiddleware);
 app.use(hppMiddleware);
 

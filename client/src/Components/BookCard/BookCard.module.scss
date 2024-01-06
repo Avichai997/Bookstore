@@ -51,25 +51,25 @@
 
   .bookStatus {
     padding: 10px;
-    height: 150px;
     display: flex;
     flex-direction: column;
     margin: 0;
+    gap: 10px ;
 
-    .descriptionLabel,
-    .authorLabel {
-      font-weight: 600;
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
-    .description {
-      font-weight: 400;
-      height: 60px;
-      line-break: loose;
-      font-size: 16px;
-      overflow-y: auto;
-      text-align: left;
-      padding-right: 5px;
+    .detail {
+      .label {
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .description {
+        font-weight: 400;
+        line-break: loose;
+        font-size: 16px;
+        overflow-y: auto;
+        text-align: left;
+        padding-right: 5px;
+      }
     }
   }
 

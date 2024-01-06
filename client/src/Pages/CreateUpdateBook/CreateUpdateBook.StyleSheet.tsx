@@ -23,6 +23,7 @@ export const inputNameStyle: CSSProperties & SxProps = {
   '& .MuiFormHelperText-root': {
     width: 'inherit',
     height: 0,
+    whiteSpace: 'nowrap',
   },
 };
 

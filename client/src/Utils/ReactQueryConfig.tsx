@@ -1,11 +1,11 @@
 import { IMutation } from '@CommonInterfaces';
 import { QueryClient, QueryClientConfig, QueryFunction, QueryKey } from '@tanstack/react-query';
 import axios, { AxiosError, AxiosRequestConfig } from 'axios';
-import { IS_ENV_DEVELOPMENT, VITE_API_URL } from '@Utils/Environment';
+import { IS_ENV_DEVELOPMENT, VITE_API_URL, CLIENT_URL } from '@Utils/Environment';
+import { ToastError } from '@CommonComponents/Toastify/Toasts';
 
 export const axiosClient = axios.create({
   baseURL: `${VITE_API_URL}/api/`,
-  withCredentials: true,
 });
 
 const defaultQueryFn: QueryFunction<unknown, QueryKey> = async ({ queryKey: path }) => {
@@ -19,6 +19,7 @@ const defaultMutationFn = async (variables: unknown) => {
 
   const requestHeaders: AxiosRequestConfig['headers'] = {
     Accept: 'application/json',
+    'Access-Control-Allow-Origin': CLIENT_URL,
     ...headers,
   };
 
@@ -45,6 +46,7 @@ async function queryErrorHandler(error: Error | AxiosError | unknown) {
 
   // eslint-disable-next-line no-console
   if (IS_ENV_DEVELOPMENT) console.error(errorMsg);
+  ToastError(errorMsg);
 }
 
 export const createQueryClient = (options?: QueryClientConfig) => {
