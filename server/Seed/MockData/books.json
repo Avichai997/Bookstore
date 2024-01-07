@@ -131,7 +131,7 @@
     "id": 15,
     "author": "Stieg Larsson",
     "publicationDate": "2005-08-16",
-    "genre": "Thriller",
+    "genre": "Action",
     "price": 25.99
   },
   {
@@ -158,7 +158,7 @@
     "id": 18,
     "author": "Paulo Coelho",
     "publicationDate": "1988-01-01",
-    "genre": "Adventure",
+    "genre": "Mystery",
     "price": 16.99
   },
   {
@@ -167,7 +167,7 @@
     "id": 19,
     "author": "Cormac McCarthy",
     "publicationDate": "2006-09-26",
-    "genre": "Dystopian",
+    "genre": "Mystery",
     "price": 28.99
   },
   {
@@ -221,7 +221,7 @@
     "id": 25,
     "author": "Thomas Harris",
     "publicationDate": "1988-05-13",
-    "genre": "Thriller",
+    "genre": "Action",
     "price": 29.99
   },
   {
@@ -230,7 +230,7 @@
     "id": 26,
     "author": "Oscar Wilde",
     "publicationDate": "1890-06-20",
-    "genre": "Gothic",
+    "genre": "Mystery",
     "price": 20.99
   },
   {
@@ -257,7 +257,7 @@
     "id": 29,
     "author": "Gabriel García Márquez",
     "publicationDate": "1967-05-30",
-    "genre": "Magical Realism",
+    "genre": "Mystery",
     "price": 27.99
   },
   {
@@ -266,7 +266,7 @@
     "id": 30,
     "author": "S.E. Hinton",
     "publicationDate": "1967-04-24",
-    "genre": "Young Adult",
+    "genre": "Drama",
     "price": 18.99
   }
 ]
