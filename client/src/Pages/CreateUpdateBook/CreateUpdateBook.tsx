@@ -8,7 +8,7 @@ import { IBook, genres } from '@ApiService/Interfaces/IBooks';
 import FormikInput from '@CommonComponents/FormikInput/FormikInput';
 import { Button } from '@mui/material';
 import SaveErrorTooltip from '@Components/SaveErrorTooltip/SaveErrorTooltip';
-import FormikSelect from '@Components/Common/FormikSelect/FormikSelect';
+import FormikSelect from '@CommonComponents/FormikSelect/FormikSelect';
 import { getDateInFormat } from '@CommonFunctions';
 import {
   buttonsStyle,
