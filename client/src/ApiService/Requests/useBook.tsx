@@ -8,6 +8,7 @@ import {
 import { IBook } from '@ApiService/Interfaces/IBooks';
 import { BOOKS_QUERY_KEY } from '@CommonConstants';
 import { ToastSuccess } from '@CommonComponents/Toastify/Toasts';
+import { useNavigate } from 'react-router-dom';
 
 export const useGetAllBooks = (options?: QueryOptions<IBook[]>) => {
   const { data: books, ...queryInfo } = useQuery<IBook[]>({
@@ -29,6 +30,7 @@ export const useGetBook = (id: string, options?: QueryOptions<IBook>) => {
 
 export const useBookCRUD = () => {
   const queryClient = useQueryClient();
+  const navigate = useNavigate();
 
   const { mutate: CreateBook, ...createMutateInfo } = useMutation<IBook, unknown, IMutation<IBook>>(
     {}
@@ -59,6 +61,7 @@ export const useBookCRUD = () => {
         onSuccess: (createdBook) => {
           updateRQCacheAfterCreate(createdBook, queryClient, BOOKS_QUERY_KEY);
           ToastSuccess('Book created successfully');
+          navigate(`/book/${createdBook.id}`);
         },
         ...options,
       }
