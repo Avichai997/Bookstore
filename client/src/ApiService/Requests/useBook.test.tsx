@@ -1,11 +1,10 @@
 import { rest } from 'msw';
 import { describe, it } from 'vitest';
-import { ToastContainer } from 'react-toastify';
 import { renderHook } from '@testing-library/react-hooks';
 import { fireEvent, screen } from '@testing-library/react';
 import { useGetAllBooks, useGetBook } from '@ApiService/Requests/useBook';
 import MockBookUi from '@Tests/MockServer/MockUi/MockBookUi';
-import { createWrapper, renderWithQueryClient } from '@Tests/MockServer/createWrapper';
+import { createWrapper, renderComponentWithProviders } from '@Tests/MockServer/createWrapper';
 import { mockServer } from '@Tests/MockServer/mockServerSetup';
 import { mockBook } from '@Tests/MockServer/mockData';
 
@@ -35,12 +34,7 @@ describe('useBook', () => {
   });
 
   it('Should create one book successfully', async () => {
-    renderWithQueryClient(
-      <div>
-        <MockBookUi />
-        <ToastContainer rtl />
-      </div>
-    );
+    renderComponentWithProviders(<MockBookUi />);
 
     const createBtn = screen.getByRole('button', {
       name: 'create',
@@ -54,12 +48,7 @@ describe('useBook', () => {
   });
 
   it('Should update one book successfully', async () => {
-    renderWithQueryClient(
-      <div>
-        <MockBookUi />
-        <ToastContainer rtl />
-      </div>
-    );
+    renderComponentWithProviders(<MockBookUi />);
 
     const updateBtn = screen.getByRole('button', {
       name: 'update',
@@ -73,12 +62,7 @@ describe('useBook', () => {
   });
 
   it('Should delete one book successfully', async () => {
-    renderWithQueryClient(
-      <div>
-        <MockBookUi />
-        <ToastContainer rtl />
-      </div>
-    );
+    renderComponentWithProviders(<MockBookUi />);
 
     const deleteBtn = screen.getByRole('button', {
       name: 'delete',

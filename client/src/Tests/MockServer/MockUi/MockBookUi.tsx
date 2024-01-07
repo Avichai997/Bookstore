@@ -1,7 +1,7 @@
 import { useGetAllBooks, useBookCRUD } from '@ApiService/Requests/useBook';
 import { ToastSuccess } from '@CommonComponents/Toastify/Toasts';
 import { isEnvTest } from '@Utils/Environment';
-import { mockBook } from '../mockData';
+import { mockBook, mockNewBook } from '../mockData';
 
 const MockBookUi = () => {
   const { books, refetch } = useGetAllBooks();
@@ -9,7 +9,7 @@ const MockBookUi = () => {
   const firstBookID = isEnvTest ? '123456' : books?.[0]?.id;
 
   const createHandler = () => {
-    createBook(mockBook, {
+    createBook(mockNewBook, {
       onSuccess: () => ToastSuccess('Book created!'),
     });
   };
