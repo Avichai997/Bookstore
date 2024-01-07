@@ -56,7 +56,9 @@ const CreateUpdateBook = () => {
         },
       });
     else {
-      createBook(bookValues);
+      createBook(bookValues, {
+        onSuccess: (book) => navigate(`/book/${book.id}`),
+      });
     }
   };
 
