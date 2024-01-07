@@ -21,7 +21,13 @@
           },
           {
             "name": "Client",
-            "commands": ["cd client", "npm i", "npm run huskyInit", "npm run dev:development"]
+            "commands": [
+              "cd client",
+              "npm set legacy-peer-deps true",
+              "npm i",
+              "npm run huskyInit",
+              "npm run dev:development"
+            ]
           }
         ]
       }

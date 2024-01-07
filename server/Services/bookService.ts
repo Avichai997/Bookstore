@@ -2,6 +2,7 @@
 import {
   bulkUpdate,
   createOne,
+  deleteMany,
   deleteOne,
   getAll,
   getOne,
@@ -11,32 +12,37 @@ import Book from '@Models/bookModel';
 import { Request } from 'express';
 
 export const getAllBooksService = (req: Request) => {
-  const book = getAll(Book, req);
+  const books = getAll(Book, req);
+
+  return books;
+};
+export const getBookService = (req: Request) => {
+  const book = getOne(Book, req);
 
   return book;
 };
-export const getBookService = (payload: any) => {
-  const book = getOne(Book, payload);
+export const createBookService = (req: Request) => {
+  const book = createOne(Book, req);
 
   return book;
 };
-export const createBookService = (payload: any) => {
-  const book = createOne(Book, payload);
+export const updateBookService = (req: Request) => {
+  const book = updateOne(Book, req);
 
   return book;
 };
-export const updateBookService = (payload: any) => {
-  const book = updateOne(Book, payload);
+export const bulkUpdateBookService = (req: Request) => {
+  const book = bulkUpdate(Book, req);
 
   return book;
 };
-export const deleteBookService = (payload: any) => {
-  const book = deleteOne(Book, payload);
+export const deleteBookService = (req: Request) => {
+  const book = deleteOne(Book, req);
 
   return book;
 };
-export const bulkUpdateBookService = (payload: any) => {
-  const book = bulkUpdate(Book, payload);
+export const deleteManyBookService = () => {
+  const book = deleteMany(Book);
 
   return book;
 };

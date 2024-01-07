@@ -25,11 +25,15 @@ const BooksContainer = () => {
         </div>
 
         <div className={classes.books}>
-          {books?.map((book, index) => (
-            <div className={classes.bookCard} key={index}>
-              <BookCard book={book} />
-            </div>
-          ))}
+          {Array.isArray(books) && books ? (
+            books.map((book, index) => (
+              <div className={classes.bookCard} key={index}>
+                <BookCard book={book} />
+              </div>
+            ))
+          ) : (
+            <>No books To show</>
+          )}
         </div>
       </div>
     </div>

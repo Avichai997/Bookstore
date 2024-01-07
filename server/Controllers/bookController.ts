@@ -1,24 +1,39 @@
-import Book from '@Models/bookModel';
 import catchAsync from '@Utils/catchAsync';
-import { createBookService, getAllBooksService } from '@Services/bookService';
-import AppError from '@Utils/AppError';
-import { getAll, getOne, updateOne, deleteOne, bulkUpdate, deleteMany } from './handlerFactory';
+import {
+  bulkUpdateBookService,
+  createBookService,
+  deleteBookService,
+  deleteManyBookService,
+  getAllBooksService,
+  getBookService,
+  updateBookService,
+} from '@Services/bookService';
 
-export const getAllBooksHandler = getAll(Book);
-export const getAllBookHandler = catchAsync(async (req, res) => {
-  const book = getAllBooksService(req);
-  res.status(201).json(book);
+export const getAllBooksHandler = catchAsync(async (req, res) => {
+  const books = await getAllBooksService(req);
+  res.status(201).json(books);
 });
-export const getBookHandler = catchAsync(async (req, res, next) => {
-  const book = getAllBooksService(req);
-
+export const getBookHandler = catchAsync(async (req, res) => {
+  const book = await getBookService(req);
   res.status(201).json(book);
 });
 export const createBookHandler = catchAsync(async (req, res) => {
-  const book = createBookService(req.body);
+  const book = await createBookService(req);
   res.status(201).json(book);
 });
-export const updateBookHandler = updateOne(Book);
-export const bulkUpdateBooksHandler = bulkUpdate(Book);
-export const deleteBookHandler = deleteOne(Book);
-export const deleteManyBooksHandler = deleteMany(Book);
+export const updateBookHandler = catchAsync(async (req, res) => {
+  const book = await updateBookService(req);
+  res.status(201).json(book);
+});
+export const bulkUpdateBooksHandler = catchAsync(async (req, res) => {
+  const books = await bulkUpdateBookService(req);
+  res.status(201).json(books);
+});
+export const deleteBookHandler = catchAsync(async (req, res) => {
+  const book = await deleteBookService(req);
+  res.status(201).json(book);
+});
+export const deleteManyBooksHandler = catchAsync(async (req, res) => {
+  const books = await deleteManyBookService();
+  res.status(201).json(books);
+});
