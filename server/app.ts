@@ -5,7 +5,6 @@ import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import globalErrorHandler from '@Controllers/errorController';
 import AppError from '@Utils/AppError';
-import userRouter from '@Routes/userRouter';
 import bookRouter from '@Routes/bookRouter';
 import {
   helmetMiddleware,
@@ -37,7 +36,6 @@ app.use(mongoSanitizeMiddleware);
 app.use(hppMiddleware);
 
 // 2) ROUTES
-app.use('/api/users', userRouter);
 app.use('/api/books', bookRouter);
 
 app.get('/api/health', (req, res) => res.send(`Server is up and running v${version}!`));

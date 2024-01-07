@@ -1,8 +1,8 @@
 # Bookstore
 
-![](client/public/logo-addbg-preview.png)
+![](client/public/logo.png)
 
-A Full-Stack web app project displaying a Bookstore catalog.
+A Full-Stack Bookstore catalog web app.
 
 # Getting Started
 
@@ -12,9 +12,13 @@ Manually:
 
 - Clone the repo.
 - Open new terminal for server
-- Run: "cd server && npm set legacy-peer-deps true && npm i && npm run huskyInit && npm run seed && npm run dev"
+- Run: 
+    ```
+    cd server && npm set legacy-peer-deps true && npm i && npm run seed && npm run dev
 - Open new terminal for client
-- Run: "cd client && npm i && npm run huskyInit && npm run dev:development
+- Run: 
+    ```
+    cd client && npm i && npm run huskyInit && npm run dev:development
 - open http://localhost:3000
 
 Automatically:

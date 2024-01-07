@@ -1,18 +1,23 @@
 import express from 'express';
 import {
-  getAllBooks,
-  createBook,
-  bulkUpdateBooks,
-  deleteManyBooks,
-  getBook,
-  updateBook,
-  deleteBook,
+  getAllBooksHandler,
+  createBookHandler,
+  bulkUpdateBooksHandler,
+  deleteManyBooksHandler,
+  getBookHandler,
+  updateBookHandler,
+  deleteBookHandler,
 } from '@Controllers/bookController';
 
 const router = express.Router();
 
-router.route('/').get(getAllBooks).post(createBook).patch(bulkUpdateBooks).delete(deleteManyBooks);
+router
+  .route('/')
+  .get(getAllBooksHandler)
+  .post(createBookHandler)
+  .patch(bulkUpdateBooksHandler)
+  .delete(deleteManyBooksHandler);
 
-router.route('/:id').get(getBook).patch(updateBook).delete(deleteBook);
+router.route('/:id').get(getBookHandler).patch(updateBookHandler).delete(deleteBookHandler);
 
 export default router;

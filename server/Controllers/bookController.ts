@@ -1,18 +1,24 @@
 import Book from '@Models/bookModel';
-import {
-  getAll,
-  getOne,
-  updateOne,
-  deleteOne,
-  createOne,
-  bulkUpdate,
-  deleteMany,
-} from './handlerFactory';
+import catchAsync from '@Utils/catchAsync';
+import { createBookService, getAllBooksService } from '@Services/bookService';
+import AppError from '@Utils/AppError';
+import { getAll, getOne, updateOne, deleteOne, bulkUpdate, deleteMany } from './handlerFactory';
 
-export const getAllBooks = getAll(Book);
-export const getBook = getOne(Book);
-export const createBook = createOne(Book);
-export const updateBook = updateOne(Book);
-export const bulkUpdateBooks = bulkUpdate(Book);
-export const deleteBook = deleteOne(Book);
-export const deleteManyBooks = deleteMany(Book);
+export const getAllBooksHandler = getAll(Book);
+export const getAllBookHandler = catchAsync(async (req, res) => {
+  const book = getAllBooksService(req);
+  res.status(201).json(book);
+});
+export const getBookHandler = catchAsync(async (req, res, next) => {
+  const book = getAllBooksService(req);
+
+  res.status(201).json(book);
+});
+export const createBookHandler = catchAsync(async (req, res) => {
+  const book = createBookService(req.body);
+  res.status(201).json(book);
+});
+export const updateBookHandler = updateOne(Book);
+export const bulkUpdateBooksHandler = bulkUpdate(Book);
+export const deleteBookHandler = deleteOne(Book);
+export const deleteManyBooksHandler = deleteMany(Book);

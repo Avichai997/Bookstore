@@ -19,12 +19,7 @@ export const logError = (error: Error) => {
 };
 
 export const getDateInFormat = (date: Date | string) =>
-  new Date(date).toISOString().slice(0, 10).toString();
-
-export const emptyFunction = () => {};
-export const minLengthText = (minLength: number) => `שדה זה צריך להכיל לפחות ${minLength} תווים`;
-export const maxLengthText = (maxLength: number) =>
-  `שדה זה צריך להכיל ${maxLength} תווים לכל היותר`;
+  date && new Date(date).toISOString().slice(0, 10).toString();
 
 function compareObjects(oldQueryData: unknown, newQueryData: unknown) {
   if (oldQueryData === newQueryData) {

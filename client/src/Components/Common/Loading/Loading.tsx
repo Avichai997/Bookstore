@@ -10,7 +10,7 @@ const Loading = () => {
   return createPortal(
     <Backdrop className={classes.backdrop} open={!!(isFetching || isMutating)}>
       <div className={classes.spinnerContainer}>
-        טוען מידע
+        Loading...
         <div className={`${classes.spinner} ${classes['spinner-red']}`} />
         <div className={`${classes.spinner} ${classes['spinner-blue']}`} />
         <div className={`${classes.spinner} ${classes['spinner-green']}`} />

@@ -9,6 +9,7 @@
     "paths": {
       "@/*": ["./*"],
       "@public/*": ["public/*"],
+      "@Services/*": ["Services/*"],
       "@Controllers/*": ["Controllers/*"],
       "@Middlewares/*": ["Middlewares/*"],
       "@Models/*": ["Models/*"],

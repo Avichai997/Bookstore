@@ -1,4 +1,5 @@
-import { NextFunction } from 'express';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { NextFunction, Request } from 'express';
 import { Model, Query, UnpackedIntersection } from 'mongoose';
 import { IPopulateOptions } from '@Interfaces/common';
 import catchAsync from '@Utils/catchAsync';
@@ -6,68 +7,63 @@ import AppError from '@Utils/AppError';
 import APIFeatures from '@Utils/ApiFeatures';
 import removeImage from '@Utils/removeImage';
 
-export const createOne = <T>(Model: Model<T>) =>
-  catchAsync(async (req, res) => {
-    const doc = await Model.create(req.body);
+export const createOne = async <T>(Model: Model<T>, payload: any) => {
+  const doc = await Model.create(payload);
 
-    return res.status(201).json(doc);
+  return doc;
+};
+
+export const getAll = async <T>(
+  Model: Model<T>,
+  req: Request,
+  populateOptions?: IPopulateOptions
+) => {
+  // To allow for nested GET links of department (hack)
+
+  const features = new APIFeatures(Model.find(), req.query)
+    .filter()
+    .sort()
+    .limitFields()
+    .paginate();
+
+  if (populateOptions) features.query = features.query.populate(populateOptions);
+
+  const doc = await features.query;
+
+  return doc;
+};
+
+export const getOne = async <T>(
+  Model: Model<T>,
+  req: Request,
+  populateOptions?: IPopulateOptions
+) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let query: Query<any, T> = Model.findById(req.params.id);
+  if (populateOptions)
+    (query as Query<unknown, T, object, UnpackedIntersection<T, unknown>, 'find'>) =
+      query.populate(populateOptions);
+
+  const doc = await query;
+  if (!doc) throw new AppError('רשומה לא נמצאה', 404);
+
+  return doc;
+};
+
+export const updateOne = async <T>(Model: Model<T>, req: Request) => {
+  delete req.body._id;
+  delete req.body.id;
+
+  const document = await Model.findById(req.params.id);
+  if (!document) throw new AppError('רשומה לא נמצאה', 404);
+
+  const doc = await Model.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true,
   });
 
-export const getAll = <T>(Model: Model<T>, populateOptions?: IPopulateOptions) =>
-  catchAsync(async (req, res) => {
-    // To allow for nested GET links of department (hack)
-    let filter = {};
-    if (req.params.linkId) filter = { link: req.params.linkId };
-
-    const features = new APIFeatures(Model.find(filter), req.query)
-      .filter()
-      .sort()
-      .limitFields()
-      .paginate();
-
-    if (populateOptions) features.query = features.query.populate(populateOptions);
-
-    const doc = await features.query;
-
-    return res.status(200).json(doc);
-  });
-
-export const getOne = <T>(Model: Model<T>, populateOptions?: IPopulateOptions) =>
-  catchAsync(async (req, res, next: NextFunction) => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let query: Query<any, T> = Model.findById(req.params.id);
-    if (populateOptions)
-      (query as Query<unknown, T, object, UnpackedIntersection<T, unknown>, 'find'>) =
-        query.populate(populateOptions);
-
-    const doc = await query;
-
-    if (!doc) return next(new AppError('רשומה לא נמצאה', 404));
-
-    return res.status(200).json(doc);
-  });
-
-export const updateOne = <T>(Model: Model<T>) =>
-  catchAsync(async (req, res, next: NextFunction) => {
-    delete req.body._id;
-    delete req.body.id;
-
-    const document = await Model.findById(req.params.id);
-    if (!document) return next(new AppError('רשומה לא נמצאה', 404));
-
-    const oldImage = document[req.body.imageFieldName as keyof T] as string;
-    const nameFolder = req.baseUrl.slice(req.baseUrl.lastIndexOf('/') + 1);
-
-    if (req.body[req.body.imageFieldName] && oldImage !== req.body[req.body.imageFieldName])
-      removeImage(oldImage, nameFolder);
-
-    const doc = await Model.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true,
-    });
-
-    return res.status(200).json(doc);
-  });
+  return doc;
+};
 
 export const bulkUpdate = <T>(Model: Model<T>) =>
   catchAsync(async (req, res) => {
