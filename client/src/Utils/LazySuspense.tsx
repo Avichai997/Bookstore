@@ -20,6 +20,4 @@ const LazySuspense = (Component: LazyExoticComponent<ComponentType<any>>) =>
 
 export default LazySuspense;
 
-export const ProjectStatus = LazySuspense(
-  lazy(() => import('@Components/ProjectStatus/ProjectStatus'))
-);
+export const ProjectStatus = LazySuspense(lazy(() => import('@Pages/ProjectStatus/ProjectStatus')));

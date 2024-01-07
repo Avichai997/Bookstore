@@ -1,4 +1,4 @@
-import { renderComponentWithProviders } from '@ApiService/Tests/MockServer/createWrapper';
+import { renderComponentWithProviders } from '@Tests/MockServer/createWrapper';
 import Accordion from './Accordion';
 
 describe('<Accordion/>', () => {

@@ -44,11 +44,11 @@ export default defineConfig(({ mode }) => {
         '@public': join(__dirname, 'public'),
         '@Assets': join(__dirname, 'src/Assets'),
         '@Pages': join(__dirname, 'src/Pages'),
+        '@Tests': join(__dirname, 'src/Tests'),
         '@Components': join(__dirname, 'src/Components'),
         '@ApiService': join(__dirname, 'src/ApiService'),
         '@Interfaces': join(__dirname, 'src/ApiService/Interfaces'),
         '@RequestApi': join(__dirname, 'src/ApiService/RequestApi'),
-        '@Tests': join(__dirname, 'src/ApiService/Tests'),
         '@Hooks': join(__dirname, 'src/Hooks'),
         '@Utils': join(__dirname, 'src/Utils'),
         '@Common': join(__dirname, 'src/Common'),
@@ -63,7 +63,7 @@ export default defineConfig(({ mode }) => {
     test: {
       globals: true,
       environment: 'jsdom',
-      setupFiles: './src/ApiService/Tests/MockServer/mockServerSetup.tsx',
+      setupFiles: './src/Tests/MockServer/mockServerSetup.tsx',
       exclude: ['node_modules', 'build'],
     },
   };

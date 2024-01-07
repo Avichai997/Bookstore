@@ -11,7 +11,7 @@
     "preview:dev": "vite preview --mode development",
     "preview:production": "vite preview --mode production",
     "test:watch": "vitest",
-    "testOnce": "vitest --run",
+    "test:once": "vitest --run",
     "test:ui": "vitest --ui",
     "merge": "git pull && git pull origin Development && git merge Development",
     "huskyInit": "cd.. && husky install && cd .husky/_ && del /f .gitignore",

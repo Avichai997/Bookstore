@@ -4,7 +4,7 @@ import { BOOKS_QUERY_KEY } from '@CommonConstants';
 import { mockBook } from './mockData';
 
 export const mockServerHandlers = [
-  // Goal Handlers
+  // Book Handlers
   rest.get(`*/${BOOKS_QUERY_KEY}`, (req, res, ctx) =>
     res(ctx.status(200), ctx.json<IBook[]>([mockBook]))
   ),

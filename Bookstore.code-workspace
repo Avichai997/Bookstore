@@ -11,13 +11,7 @@
         "splitTerminals": [
           {
             "name": "Server",
-            "commands": [
-              "cd server",
-              "npm set legacy-peer-deps true",
-              "npm i",
-              "npm run huskyInit",
-              "npm run dev"
-            ]
+            "commands": ["cd server", "npm set legacy-peer-deps true", "npm i", "npm run dev"]
           },
           {
             "name": "Client",

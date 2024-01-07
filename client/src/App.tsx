@@ -1,4 +1,4 @@
-import ProjectStatus from '@Components/ProjectStatus/ProjectStatus';
+import ProjectStatus from '@Pages/ProjectStatus/ProjectStatus';
 import { Route, Routes } from 'react-router-dom';
 import BooksCatalog from '@Pages/BooksCatalog/BooksCatalog';
 import BooksContainer from '@Components/BooksContainer/BooksContainer';
