@@ -12,4 +12,4 @@ client/build*/
 # server ignores:
 server/node_modules
 server/package-lock.json
-server/build/*
+server/build*/
