@@ -18,6 +18,6 @@ export const mockServerHandlers = [
     res(ctx.status(200), ctx.json<IBook>(mockBook))
   ),
   rest.delete(`*/${BOOKS_QUERY_KEY}/:id`, (req, res, ctx) =>
-    res(ctx.status(200), ctx.json<IBook['id']>('Success deleting Goal'))
+    res(ctx.status(200), ctx.json<IBook['id']>('Success deleting Book'))
   ),
 ];
