@@ -13,7 +13,7 @@
     "test:watch": "vitest",
     "test:once": "vitest --run",
     "test:ui": "vitest --ui",
-    "installDep": "npm set legacy-peer-deps true && npm i",
+    "prod": "npm i -- force && vite build --mode production",
     "merge": "git pull && git pull origin Development && git merge Development",
     "huskyInit": "cd.. && husky install && cd .husky/_ && del /f .gitignore",
     "lint": "tsc && prettier --write --cache --log-level silent . && cspell --cache --no-progress ../**/* && eslint --fix --cache."
